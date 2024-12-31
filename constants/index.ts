@@ -8,7 +8,7 @@ export const navItems = [
       url: "/passenger-details",
     },
     {
-      name: "Select Seat",
+      name: "Select Seats",
       url: "/select-seat",
     },
     {

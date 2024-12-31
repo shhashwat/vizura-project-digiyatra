@@ -64,3 +64,35 @@
     @apply bg-background text-foreground;
   }
 }
+
+.h1 {
+  font-size: 2.25rem; /* 36px */
+  font-weight: 700; /* Bold */
+  color: #1a202c; /* Gray-900 */
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.h2 {
+  font-size: 1.875rem; /* 30px */
+  font-weight: 600; /* Semi-bold */
+  color: #2d3748; /* Gray-800 */
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.h3 {
+  font-size: 1.5rem; /* 24px */
+  font-weight: 500; /* Medium */
+  color: #4a5568; /* Gray-700 */
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.h4 {
+  font-size: 1.25rem; /* 20px */
+  font-weight: 500; /* Medium */
+  color: #718096; /* Gray-600 */
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+}
