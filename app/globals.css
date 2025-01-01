@@ -68,7 +68,7 @@
 .h1 {
   font-size: 2.25rem; /* 36px */
   font-weight: 700; /* Bold */
-  color: #1a202c; /* Gray-900 */
+  color: #ffffff; /* Gray-900 */
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -76,7 +76,7 @@
 .h2 {
   font-size: 1.875rem; /* 30px */
   font-weight: 600; /* Semi-bold */
-  color: #2d3748; /* Gray-800 */
+  color: #00000; /* Gray-800 */
   margin-top: 1.5rem;
   margin-bottom: 0.75rem;
 }
@@ -84,7 +84,7 @@
 .h3 {
   font-size: 1.5rem; /* 24px */
   font-weight: 500; /* Medium */
-  color: #4a5568; /* Gray-700 */
+  color: #00000; /* Gray-700 */
   margin-top: 1.25rem;
   margin-bottom: 0.5rem;
 }
@@ -92,7 +92,76 @@
 .h4 {
   font-size: 1.25rem; /* 20px */
   font-weight: 500; /* Medium */
-  color: #718096; /* Gray-600 */
+  color: #00000; /* Gray-600 */
   margin-top: 1rem;
   margin-bottom: 0.25rem;
+}
+
+.hidden{
+  display: none;
+}
+
+.flight-background {
+  background-image: url('/assets/flightBackground.png');
+  position: absolute; /* Makes the background stay fixed across the viewport */
+  top: 0;
+  width: 100vw; /* Full viewport width */
+  height: auto; /* Full viewport height */
+  background-image: url('/assets/flightBackground.png'); /* Path to your image */
+  background-size: cover; /* Ensures the image covers the entire screen */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  overflow: auto;
+}
+
+.flight-background2 {
+  background-image: url('/assets/flightBackground.png');
+  position: absolute; /* Makes the background stay fixed across the viewport */
+  top: 0;
+  width: 100vw; /* Full viewport width */
+  height: 100dvh; /* Full viewport height */
+  background-image: url('/assets/flightBackground.png'); /* Path to your image */
+  background-size: cover; /* Ensures the image covers the entire screen */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  overflow: auto;
+}
+
+.flight-background-plane {
+  background-image: url('/assets/flightBackgroundPlane.png');
+  position: absolute; /* Makes the background stay fixed across the viewport */
+  top: 0;
+  width: 100vw; /* Full viewport width */
+  height: 130vh; /* Full viewport height */
+  background-size: cover; /* Ensures the image covers the entire screen */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  overflow: auto;
+}
+
+/* Button CSS */
+.seat-btn {
+  background-color: transparent;
+  color: #000; /* Text color */
+  padding: 1.25rem 1.85rem;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover state */
+.seat-btn:hover {
+  background: transparent;
+  background-color: transparent;
+  border-color: pink;
+  box-shadow: 0 0 10px pink;
+}
+
+/* Active state */
+.seat-btn:active {
+  background: transparent;
+  background-color: transparent;
+  border-color: pink;
+  box-shadow: 0 0 15px pink;
+  color: pink; /* Optional: Make the text pink when active */
 }
