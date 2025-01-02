@@ -11,7 +11,7 @@ const Conclusion = () => {
        </h1>
        <div className='flex items-start justify-center flex-col'>
         <p>
-          Wow, what a whirlwind adventure we had with Digi Yatra! This awesome app taught us all about the magic of AI, from making our boarding passes to recognizing our faces at the airport. Let's relive our journey and see what amazing things we discovered!
+          Wow, what a whirlwind adventure we had with Digi Yatra! This awesome app taught us all about the magic of AI, from making our boarding passes to recognizing our faces at the airport. Let&apos;s relive our journey and see what amazing things we discovered!
         </p>
 
         <h3 className='h4' >Our Incredible Journey:</h3>
@@ -27,14 +27,14 @@ const Conclusion = () => {
 
         <h3 className='h4'>What We Learned:</h3>
         <p>
-          Through our adventure, we realized that AI isn't just some fancy technology. It's like having a wise friend who can do all sorts of incredible things, like making sure we have our boarding passes ready and helping us breeze through airport security.
+          Through our adventure, we realized that AI isn&apos;t just some fancy technology. It&apos;s like having a wise friend who can do all sorts of incredible things, like making sure we have our boarding passes ready and helping us breeze through airport security.
           <br />
           <br />
-              We also learned that AI isn't perfect. Sometimes, it might get a little mixed up or not recognize us right away. But that's okay! We can help teach it and make it even better, just like helping a friend learn something new.
+              We also learned that AI isn&apos;t perfect. Sometimes, it might get a little mixed up or not recognize us right away. But that&apos;s okay! We can help teach it and make it even better, just like helping a friend learn something new.
         </p>
         <h3 className='h4'>Dreaming of More Adventures:</h3>
         <p>
-          As we head home from our journey, we can't help but dream of more adventures with AI by our side. With its help, we can explore new places, discover new things, and make memories that will last a lifetime. Who knows what magical adventures await us next time!
+          As we head home from our journey, we can&apos;t help but dream of more adventures with AI by our side. With its help, we can explore new places, discover new things, and make memories that will last a lifetime. Who knows what magical adventures await us next time!
         </p>
        </div>
 

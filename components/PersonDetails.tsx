@@ -36,6 +36,9 @@ const PersonDetails = ({ person }: Props) => {
 
   return (
     <div className='m-4' >
+      <div className='hidden' >
+        {name1}
+      </div>
       <p>
         Person {person}
       </p>

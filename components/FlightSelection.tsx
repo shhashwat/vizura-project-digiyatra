@@ -55,6 +55,11 @@ const FlightSelection = () => {
   return (
     <div>
         <div className="bg-white rounded-md lg:w-[120%] lg:-translate-x-24 sm:w-[95%] h-[105%] shadow-md p-4">
+          <div className="hidden" >
+            newArrival();
+            newDeparture();
+            newDate();
+          </div>
           <AirportSearch
             onSelectAirport={handleArrivalSelect}
             placeholder="From"

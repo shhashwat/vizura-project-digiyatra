@@ -26,10 +26,6 @@ const SelectSeats = () => {
     }
   };
 
-  const planeSeats = JSON.parse(localStorage.getItem("Seats") || "[]");
-  const seat1Obj = planeSeats[0];
-  const seat1 = seat1Obj ? `${seat1Obj.row}${seat1Obj.column}` : null;
-
   return (
     <div className="flight-background-plane">
       <div className="flex items-center justify-center flex-col">

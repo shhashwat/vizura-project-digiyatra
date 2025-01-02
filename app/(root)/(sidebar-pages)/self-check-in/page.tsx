@@ -48,14 +48,14 @@ const SelfChcekIn = () => {
           <div className='flex items-center justify-center flex-col gap-4'>
             <div className='flex items-center justify-center flex-row gap-4'>
               <p>
-                {name1}'s confirmed Boarding Pass:
+                {name1}&apos;s confirmed Boarding Pass:
               </p>
               <BPMConfirmed firstName={name1} lastName={lastName1} date={date} seat={seat1} seatGroup={seat1Group} arrival={arrival} departure={departure}/>
             </div>
 
             <div className='flex items-center justify-center flex-row gap-4'>
               <p>
-                {name2}'s confirmed Boarding Pass:
+                {name2}&apos;s confirmed Boarding Pass:
               </p>
               <BPMConfirmed firstName={name2} lastName={lastName2} date={date} seat={seat2} seatGroup={seat2Group} arrival={arrival} departure={departure}/>
             </div>

@@ -59,6 +59,7 @@ const AirportSearch= ({ onSelectAirport, placeholder, value }: AirportSearchProp
 
   return (
     <div className=" inline-block w-[25%] m-2">
+      <div className="hidden" >{searchTerm}</div>
       <Input
         type="text"
         placeholder={placeholder}
