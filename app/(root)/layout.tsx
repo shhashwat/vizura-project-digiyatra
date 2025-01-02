@@ -11,7 +11,7 @@ const Layout = async ( {children}:{children: React.ReactNode} ) => {
 
         <section>
             <div className='w-full h-full'>
-              <div className='p-4 h-full overflow-y-scroll box-border'>
+              <div className='p-4 h-full overflow-auto box-border'>
                   {children}
               </div>
             </div>

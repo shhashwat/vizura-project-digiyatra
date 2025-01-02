@@ -1,4 +1,3 @@
-import FlightsAvailable from "@/components/FlightsAvailable";
 import FlightSelection from "@/components/FlightSelection";
 
 export default function Home() {
@@ -13,7 +12,6 @@ export default function Home() {
         <div className="flex justify-center items-baseline mt-8">
           <FlightSelection/>
         </div>
-        <FlightsAvailable/>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import { Button } from './ui/button'
+import TakePictures from "@/components/TakePictures";
 
 const FaceCapture = () => {
   return (
@@ -35,18 +35,8 @@ const FaceCapture = () => {
         </div>
 
         {/*WEBCAM BUTTON*/}
-        <div className="flex items-center justify-center p-8 bg-blue-200 hover:bg-blue-300 active:bg-blue-400 transition-colors duration-300 ease-in-out flex-col rounded-2xl">
-          <Button className="flex items-center justify-center p-1 w-full bg-transparent hover:bg-transparent shadow-none flex-col">
-              <Image
-                src={'/assets/icons/cam.png'}
-                width={30}
-                height={30}
-                alt='camera'
-                />
-            <p className='text-black ml-2' >WEBCAM</p>
-          </Button>
-          {/*PROGRESS BAR*/}
-        </div>
+        <TakePictures/>
+        {/*PROGRESS BAR*/}
     </div>
   )
 }

@@ -4,7 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import { planeSeatsLeft, planeSeatsRight } from '@/constants/index';
 
-const Seats = ({
+const SeatsN = ({
   column,
   onSeatSelect,
   selectedSeats,
@@ -64,4 +64,4 @@ const Seats = ({
   );
 };
 
-export default Seats;
+export default SeatsN;

@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import Seats from '@/components/Seats';
+import SeatsN from '@/components/SeatsN';
 
 const SelectSeats = () => {
   const [selectedSeats, setSelectedSeats] = useState<{ row: string; column: string }[]>([]);
@@ -13,23 +13,16 @@ const SelectSeats = () => {
       // Deselect the seat if it's already selected
       const updatedSeats = selectedSeats.filter(s => !(s.row === seat.row && s.column === seat.column));
       setSelectedSeats(updatedSeats);
-      // console.log("Deselected seat:", seat);
-      // console.log("Current selected seats:", updatedSeats);
-      localStorage.setItem("Seats", JSON.stringify(updatedSeats));
+      console.log("Deselected seat:", seat);
+      console.log("Current selected seats:", updatedSeats);
     } else if (selectedSeats.length < 2) {
       // Select the seat if less than 2 seats are selected
       const updatedSeats = [...selectedSeats, seat];
       setSelectedSeats(updatedSeats);
-      // console.log("Selected seat:", seat);
-      // console.log("Current selected seats:", updatedSeats);
-      localStorage.setItem("Seats", JSON.stringify(updatedSeats));
+      console.log("Selected seat:", seat);
+      console.log("Current selected seats:", updatedSeats);
     }
   };
-
-  const planeSeats = JSON.parse(localStorage.getItem("Seats") || "[]");
-  const seat1Obj = planeSeats[0];
-  const seat1 = seat1Obj ? `${seat1Obj.row}${seat1Obj.column}` : null;
-  console.log(seat1);
 
   return (
     <div className="flight-background-plane">
@@ -65,8 +58,8 @@ const SelectSeats = () => {
         <div className="flex items-center justify-center flex-row scale-50 -translate-y-40 translate-x-2">
           <div className="flex gap-2 items-center justify-center sm:scale-75 lg:scale-100 flex-row">
             <div className="flex gap-10 items-center justify-center flex-row">
-              <Seats column={"left"} onSeatSelect={handleSeatSelect} selectedSeats={selectedSeats} />
-              <Seats column={"right"} onSeatSelect={handleSeatSelect} selectedSeats={selectedSeats} />
+              <SeatsN column={"left"} onSeatSelect={handleSeatSelect} selectedSeats={selectedSeats} />
+              <SeatsN column={"right"} onSeatSelect={handleSeatSelect} selectedSeats={selectedSeats} />
             </div>
           </div>
         </div>

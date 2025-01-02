@@ -23,8 +23,116 @@ export const navItems = [
       name: "Conclusion",
       url: "/conclusion",
     },
+    {
+      name: "Experiment",
+      url: "/experiment",
+    },
   ];
 
+export const indianAirports = [
+    {
+      fullName: "Indira Gandhi International Airport",
+      code: "DEL",
+      cityName: "Delhi",
+    },
+    {
+      fullName: "Chhatrapati Shivaji Maharaj International Airport",
+      code: "BOM",
+      cityName: "Mumbai",
+    },
+    {
+      fullName: "Kempegowda International Airport",
+      code: "BLR",
+      cityName: "Bengaluru",
+    },
+    {
+      fullName: "Chennai International Airport",
+      code: "MAA",
+      cityName: "Chennai",
+    },
+    {
+      fullName: "Netaji Subhas Chandra Bose International Airport",
+      code: "CCU",
+      cityName: "Kolkata",
+    },
+    {
+      fullName: "Rajiv Gandhi International Airport",
+      code: "HYD",
+      cityName: "Hyderabad",
+    },
+    {
+      fullName: "Cochin International Airport",
+      code: "COK",
+      cityName: "Kochi",
+    },
+    {
+      fullName: "Goa International Airport",
+      code: "GOI",
+      cityName: "Dabolim",
+    },
+    {
+      fullName: "Sardar Vallabhbhai Patel International Airport",
+      code: "AMD",
+      cityName: "Ahmedabad",
+    },
+    {
+      fullName: "Pune Airport",
+      code: "PNQ",
+      cityName: "Pune",
+    },
+    {
+      fullName: "Jaipur International Airport",
+      code: "JAI",
+      cityName: "Jaipur",
+    },
+    {
+      fullName: "Lokpriya Gopinath Bordoloi International Airport",
+      code: "GAU",
+      cityName: "Guwahati",
+    },
+    {
+      fullName: "Trivandrum International Airport",
+      code: "TRV",
+      cityName: "Thiruvananthapuram",
+    },
+    {
+      fullName: "Sri Guru Ram Dass Jee International Airport",
+      code: "ATQ",
+      cityName: "Amritsar",
+    },
+    {
+      fullName: "Biju Patnaik International Airport",
+      code: "BBI",
+      cityName: "Bhubaneswar",
+    },
+    {
+      fullName: "Lal Bahadur Shastri International Airport",
+      code: "VNS",
+      cityName: "Varanasi",
+    },
+    {
+      fullName: "Devi Ahilya Bai Holkar Airport",
+      code: "IDR",
+      cityName: "Indore",
+    },
+    {
+      fullName: "Madurai Airport",
+      code: "IXM",
+      cityName: "Madurai",
+    },
+    {
+      fullName: "Bagdogra Airport",
+      code: "IXB",
+      cityName: "Bagdogra",
+    },
+    {
+      fullName: "Birsa Munda Airport",
+      code: "IXR",
+      cityName: "Ranchi",
+    },
+  ];  
+
+//SEATS
 export const planeSeatsLeft = [
   {
     row: "1",

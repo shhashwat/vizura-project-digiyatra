@@ -1,8 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
 import { Button } from './ui/button'
+import Link from 'next/link'
 
-const FlightsAvailable = () => {
+const FlightsAvailable = ({arrival, departure}: {arrival: string, departure: string}) => {
   return (
     <div className='flex items-center justify-center mt-3 flex-col' >
     {/* DROPDOWN FLIGHTS*/}
@@ -26,7 +27,9 @@ const FlightsAvailable = () => {
                   <span className='h4 text-black' >
                     20:08
                   </span>
-                  <span className='text-sm flex justify-end'>DEL</span>
+                  <span className='text-sm flex justify-end'>
+                    {arrival}
+                  </span>
                 </div>
                 <div className='flex flex-col flex-grow items-center' >
                     <span className='flex justify-center items-center text-sm'>2hr 15min</span>
@@ -40,7 +43,7 @@ const FlightsAvailable = () => {
                   <span
                   className='text-sm flex justify-start'
                   >
-                    DEL
+                    {departure}
                   </span>
                 </div>
             </span>
@@ -76,7 +79,9 @@ const FlightsAvailable = () => {
                   <span className='h4 text-black' >
                     21:08
                   </span>
-                  <span className='text-sm flex justify-end'>DEL</span>
+                  <span className='text-sm flex justify-end'>
+                    {arrival}
+                  </span>
                 </div>
                 <div className='flex flex-col flex-grow items-center' >
                     <span className='flex justify-center items-center text-sm'>2hr 15min</span>
@@ -90,7 +95,7 @@ const FlightsAvailable = () => {
                   <span
                   className='text-sm flex justify-start'
                   >
-                    DEL
+                    {departure}
                   </span>
                 </div>
             </span>
@@ -107,8 +112,8 @@ const FlightsAvailable = () => {
       {/* DROPDOWN 2 ENDS*/}
 
 
+      {/* DROPDOWN 3 STARTS*/}
       <div className='bg-white rounded-md w-[80%] h-[100%] shadow-md p-4 mb-2 flex-row'>
-        {/* DROPDOWN 3 STARTS*/}
         <div className="flex items-center justify-between p-4">
             <span className="flex justify-center items-center">
               <Image
@@ -125,7 +130,9 @@ const FlightsAvailable = () => {
                   <span className='h4 text-black' >
                     14:08
                   </span>
-                  <span className='text-sm flex justify-end'>DEL</span>
+                  <span className='text-sm flex justify-end'>
+                  {arrival}
+                  </span>
                 </div>
                 <div className='flex flex-col flex-grow items-center' >
                     <span className='flex justify-center items-center text-sm'>2hr 15min</span>
@@ -139,7 +146,7 @@ const FlightsAvailable = () => {
                   <span
                   className='text-sm flex justify-start'
                   >
-                    DEL
+                    {departure}
                   </span>
                 </div>
             </span>
@@ -174,7 +181,9 @@ const FlightsAvailable = () => {
                   <span className='h4 text-black' >
                     17:08
                   </span>
-                  <span className='text-sm flex justify-end'>DEL</span>
+                  <span className='text-sm flex justify-end'>
+                  {arrival}
+                  </span>
                 </div>
                 <div className='flex flex-col flex-grow items-center' >
                     <span className='flex justify-center items-center text-sm'>2hr 15min</span>
@@ -188,7 +197,7 @@ const FlightsAvailable = () => {
                   <span
                   className='text-sm flex justify-start'
                   >
-                    DEL
+                    {departure}
                   </span>
                 </div>
             </span>
@@ -203,6 +212,11 @@ const FlightsAvailable = () => {
           </div>
       </div>
       {/* DROPDOWN 4 ENDS*/}
+        <Button className="mt-4 mb-4 px-3 py-1 text-white text-xs font-medium rounded-md bg-gradient-to-r from-purple-500 via-indigo-500 to-pink-500 transform transition-transform duration-300 hover:scale-110 active:scale-110">
+            <Link href={'/passenger-details'}>
+              Next Step
+            </Link>
+        </Button>
     </div>
   )
 }
