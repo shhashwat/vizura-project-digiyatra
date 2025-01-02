@@ -22,28 +22,38 @@ const Sidebar = () => {
     setIsOpen((prevState) => !prevState);
   }
   return (
-    <aside className="flex items-center h-auto bg-white border rounded-md shadow-md" >
+    <aside className="flex items-center h-full bg-white border rounded-md shadow-md" >
       <Sheet key={"left"} open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger>
-            <Image
-            src={"/assets/icons/right.png"}
-            width={24}
-            height={24}
-            alt="Menu"
-            />
+            <div className="relative group">
+              <Image
+                src={"/assets/icons/right.png"}
+                width={24}
+                height={24}
+                alt="Menu"
+                />
+              <span className="absolute left-1/2 -translate-x-1/2 top-full mt-2 px-2 py-1 text-xs text-white bg-gray-700 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                Open Sidebar
+              </span>
+            </div>
           </SheetTrigger>
         <SheetContent side={"left"} >
             <SheetTitle></SheetTitle>
             <div className="absolute inset-0 right-4 flex items-center justify-end opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-0 focus:ring-offset-0 disabled:pointer-events-none data-[state=open]:bg-secondary">
-              <Image
-                src="/assets/icons/back.png"
-                width={24}
-                height={24}
-                alt="Close"
-                className="h-4 w-4"
-                onClick={toggleSidebar}
-              />
-            </div>
+              <div className="relative group">
+                <Image
+                  src="/assets/icons/back.png"
+                  width={24}
+                  height={24}
+                  alt="Close"
+                  className="h-4 w-4"
+                  onClick={toggleSidebar}
+                />
+                <span className="absolute left-1/2 -translate-x-1/2 top-full mt-2 px-2 py-1 text-xs text-white bg-gray-700 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Close Sidebar
+                </span>
+              </div>
+              </div>
             <div className='h-[95%] w-[95%] bg-white'>
               <nav className='relative z-20' >
                 <ul className='flex flex-col p-4 gap-4' >

@@ -23,13 +23,14 @@ export const navItems = [
       name: "Conclusion",
       url: "/conclusion",
     },
-    {
-      name: "Experiment",
-      url: "/experiment",
-    },
   ];
 
 export const indianAirports = [
+    {
+      fullName: "Allahabad Airport",
+      code: "IXD",
+      cityName: "Prayagraj",
+    },
     {
       fullName: "Indira Gandhi International Airport",
       code: "DEL",

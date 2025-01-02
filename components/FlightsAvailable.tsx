@@ -52,7 +52,9 @@ const FlightsAvailable = ({arrival, departure}: {arrival: string, departure: str
                 &#x20B9;7,350
               </span>
               <Button className="relative overflow-hidden rounded-lg bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-500 hover:opacity-90 active:opacity-80 transition-all duration-300 ease-in-out shadow-md hover:shadow-lg" >
-                SELECT
+                <Link href={'/passenger-details'}>
+                  SELECT
+                </Link>
               </Button>
             </span>
           </div>
@@ -104,7 +106,9 @@ const FlightsAvailable = ({arrival, departure}: {arrival: string, departure: str
                 &#x20B9;7,650
               </span>
               <Button className="relative overflow-hidden rounded-lg bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-500 hover:opacity-90 active:opacity-80 transition-all duration-300 ease-in-out shadow-md hover:shadow-lg" >
-                SELECT
+              <Link href={'/passenger-details'}>
+                  SELECT
+                </Link>
               </Button>
             </span>
           </div>
@@ -155,7 +159,9 @@ const FlightsAvailable = ({arrival, departure}: {arrival: string, departure: str
                 &#x20B9;8,180
               </span>
               <Button className="relative overflow-hidden rounded-lg bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-500 hover:opacity-90 active:opacity-80 transition-all duration-300 ease-in-out shadow-md hover:shadow-lg" >
-                SELECT
+              <Link href={'/passenger-details'}>
+                  SELECT
+                </Link>
               </Button>
             </span>
           </div>
@@ -206,7 +212,9 @@ const FlightsAvailable = ({arrival, departure}: {arrival: string, departure: str
                 &#x20B9;8,350
               </span>
               <Button className="relative overflow-hidden rounded-lg bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-500 hover:opacity-90 active:opacity-80 transition-all duration-300 ease-in-out shadow-md hover:shadow-lg" >
-                SELECT
+              <Link href={'/passenger-details'}>
+                  SELECT
+                </Link>
               </Button>
             </span>
           </div>

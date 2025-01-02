@@ -29,7 +29,6 @@ const SelectSeats = () => {
   const planeSeats = JSON.parse(localStorage.getItem("Seats") || "[]");
   const seat1Obj = planeSeats[0];
   const seat1 = seat1Obj ? `${seat1Obj.row}${seat1Obj.column}` : null;
-  console.log(seat1);
 
   return (
     <div className="flight-background-plane">
@@ -62,8 +61,8 @@ const SelectSeats = () => {
         </div>
 
         {/* SEATS */}
-        <div className="flex items-center justify-center flex-row scale-50 -translate-y-40 translate-x-2">
-          <div className="flex gap-2 items-center justify-center sm:scale-75 lg:scale-100 flex-row">
+        <div className="flex items-center justify-center flex-row scale-50 -translate-y-60 translate-x-2">
+          <div className="flex gap-2 items-center justify-center sm:translate-y-40 sm:scale-75 lg:scale-100 flex-row">
             <div className="flex gap-10 items-center justify-center flex-row">
               <Seats column={"left"} onSeatSelect={handleSeatSelect} selectedSeats={selectedSeats} />
               <Seats column={"right"} onSeatSelect={handleSeatSelect} selectedSeats={selectedSeats} />

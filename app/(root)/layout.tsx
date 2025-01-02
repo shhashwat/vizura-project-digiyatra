@@ -10,7 +10,7 @@ const Layout = async ( {children}:{children: React.ReactNode} ) => {
         <Sidebar />
 
         <section>
-            <div className='w-full h-full'>
+            <div className='w-full h-screen'>
               <div className='p-4 h-full overflow-auto box-border'>
                   {children}
               </div>

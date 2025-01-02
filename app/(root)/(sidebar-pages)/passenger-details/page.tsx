@@ -13,7 +13,7 @@ const PassengerDetails = () => {
 
   const handleSubmit = () => {
     setSubmit(true);
-    router.push('/select-seats');
+    router.push('/select-seat');
   };
 
   return (

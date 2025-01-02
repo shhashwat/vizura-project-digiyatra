@@ -94,7 +94,7 @@ const FlightSelection = () => {
           !selectedDeparture ||
           !selectedDate ? (
             <h1 className="flex justify-center items-center text-black-500 mt-4">
-              Please select your flight arrival, destination, and date
+              Please select your flight departure, destination, and date
             </h1>
           ) : null}
         </div>

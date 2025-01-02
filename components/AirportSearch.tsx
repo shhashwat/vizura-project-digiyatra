@@ -17,7 +17,7 @@ const AirportSearch= ({ onSelectAirport, placeholder, value }: AirportSearchProp
   const [inputValue, setInputValue] = useState(value);
 
   useEffect(() => {
-    setInputValue(value); // Update input value when the prop changes
+    setInputValue(value);
   }, [value]);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {

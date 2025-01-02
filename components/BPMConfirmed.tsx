@@ -10,7 +10,7 @@ import {
     AlertDialogTrigger,
   } from "@/components/ui/alert-dialog"
 import Image from 'next/image'
-import Ticket from './Ticket';
+import TicketConfirmed from './TicketConfirmed';
 import { Button } from './ui/button';
 
 interface Props {
@@ -19,9 +19,11 @@ interface Props {
     date: string | null;
     seat: string | null;
     seatGroup: string | null;
-}
+    arrival: string | null;
+    departure: string | null;
+  }
 
-const BoardingPassModal = ({firstName, lastName, date, seat, seatGroup}: Props) => {
+const BPMConfirmed = ({firstName, lastName, date, seat, seatGroup, arrival, departure }: Props) => {
     const [inverse, setInverse] = useState(false);
 
     const toggleInverse = () => {
@@ -48,7 +50,7 @@ const BoardingPassModal = ({firstName, lastName, date, seat, seatGroup}: Props) 
                 <AlertDialogHeader>
                 <AlertDialogTitle></AlertDialogTitle>
                     {/* BOARDING PASS */}
-                    <Ticket inverse={inverse} firstName={firstName} lastName={lastName} date={date} seat={seat} seatGroup={seatGroup} />
+                    <TicketConfirmed inverse={inverse} firstName={firstName} lastName={lastName} date={date} seat={seat} seatGroup={seatGroup} arrival={arrival} departure={departure}/>
                 </AlertDialogHeader>
                 <AlertDialogFooter>
                 <Button variant="ghost" onClick={toggleInverse}>Invert Colour</Button>
@@ -63,4 +65,4 @@ const BoardingPassModal = ({firstName, lastName, date, seat, seatGroup}: Props) 
   )
 }
 
-export default BoardingPassModal
+export default BPMConfirmed
