@@ -1,7 +1,9 @@
 "use client";
 
 import BPMConfirmed from '@/components/BPMConfirmed';
+import { Button } from '@/components/ui/button';
 import VerifyPassengers from '@/components/VerifyPassengers'
+import Link from 'next/link';
 import React, { useState } from 'react'
 
 const SelfChcekIn = () => {
@@ -59,6 +61,13 @@ const SelfChcekIn = () => {
               </p>
               <BPMConfirmed firstName={name2} lastName={lastName2} date={date} seat={seat2} seatGroup={seat2Group} arrival={arrival} departure={departure}/>
             </div>
+            <Button className='px-4 py-2 text-white text-sm font-medium rounded-md bg-gradient-to-br from-purple-500 via-indigo-500 to-pink-500 hover:opacity-80 transition-opacity duration-300 ease-in-out shadow-md flex items-center flex-row gap-2'
+            onClick={() => localStorage.clear()}
+            >
+              <Link href={'/conclusion'}>
+                <p>Conclusion</p>
+              </Link>
+            </Button>
           </div>
         )}
         
