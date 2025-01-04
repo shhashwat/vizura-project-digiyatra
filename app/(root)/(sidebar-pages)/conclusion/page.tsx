@@ -1,3 +1,5 @@
+import { Button } from '@/components/ui/button'
+import Link from 'next/link'
 import React from 'react'
 
 const Conclusion = () => {
@@ -37,7 +39,9 @@ const Conclusion = () => {
           As we head home from our journey, we can&apos;t help but dream of more adventures with AI by our side. With its help, we can explore new places, discover new things, and make memories that will last a lifetime. Who knows what magical adventures await us next time!
         </p>
        </div>
-
+       <Button className='px-4 py-2 text-white text-sm font-medium rounded-md bg-gradient-to-br from-purple-500 via-indigo-500 to-pink-500 hover:opacity-80 transition-opacity duration-300 ease-in-out shadow-md flex items-center flex-row gap-2 mt-5' >
+        <Link href='/'>Book a flight again</Link>
+       </Button>
     </div>
   )
 }
